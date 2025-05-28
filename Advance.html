@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            background-color: coral;
+            width:600px;
+            height:300px;
+            text-align: center;
+            padding: 30px;
+            margin:auto;
+        }
+        td{
+            padding:10px;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        select,
+        textarea{
+            width:100%;
+        }
+input[type="submit"],
+input[type="reset"]
+{
+    border-radius: 10px;
+    padding: 10px;
+    width:100px;
+}
+    </style>
+</head>
+<body>
+    <table border="1">
+        <caption style="font-weight:700;font-size: 30px;color:blueviolet">SignUp</caption>
+
+    <form action="success.html" method="get">
+    <tr>
+    <td><label for="Name">Name</label></td>
+    <td><input type="text" name="Name" value="" required pattern="\w{3,16}"/></td> 
+     </tr><br>
+     <tr>
+        <td><label for="Phno">Phonenumber</label></td>
+        <td><input type="number" name="Phonenumber" value="" required/></td> 
+         </tr><br>
+    <tr>
+     <td><label for="address">Address</label></td>
+    <td><textarea row="3" col="3"  minlength="10" maxlength="40" required>CBE</textarea></td> 
+    </tr><br>
+    <tr>
+     <td><label for="email">Email</label></td>
+     <td><input type="email" name="email" value="" required/></td> 
+     </tr><br>
+     <tr>
+     <td><label for="language">language</label></td>
+    <td><input type="checkbox" name="language" value="tamil"/>tamil
+        <input type="checkbox" name="language" value="English"/>English
+        <input type="checkbox" name="language" value="Hindi"/>Hindi</td> 
+     </tr><br>
+     <tr>
+        <td><label for="Gender">Gender</label></td>
+        <td><input type="radio" name="Gender" value="female"/>female
+            <input type="radio" name="Gender" value="male"/>male</td> 
+        </tr><br>
+        <tr>
+            <td><label for="Qualification">Qualification</label></td>
+            <td><select>
+                <option>please select</option>
+                <option>BE</option>
+                <option>Btech</option>
+                <option>Msc(IT)</option>
+                <option>BCom</option>
+                <option>BA</option>
+                <option>Bsc</option>
+              </select></td> 
+            </tr><br>
+            <tr>
+                <td><input type="submit"  value="Register"/></td>
+                <td><input type="reset"  value="Cancel"/></td> 
+                 </tr><br>
+    </form>
+</table>
+</body>
+</html>

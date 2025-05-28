@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width:500px;
+            height: 200px;
+            padding:10px;
+            margin:auto;
+            background-color: azure;
+        }
+        td{
+            padding:10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <caption style="font-size: 40px;">SignIn</caption>
+    <form action="success.html" method="post">
+        <tr>
+        <td><label for="username">UserName</label></td>
+      <td>  <input type="text" name="username" value="" required/></td></tr>
+        <br>
+       <tr><td> <label for="password">Password</label></td>
+        <td><input type="password" name="password" value="" required/>
+        </td></tr><br>
+       <tr> <td colspan="2"><input type="submit" value="Login"/></td></tr>
+    </form>
+</table>
+</body>
+</html>
